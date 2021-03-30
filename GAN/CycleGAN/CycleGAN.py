@@ -110,7 +110,7 @@ lr_schedular_G = torch.optim.lr_scheduler.LambdaLR(
 lr_schedular_D_A = torch.optim.lr_scheduler.LambdaLR(
     optimizer_D_A, lr_lambda=LambdaLR(opt.n_epochs, opt.epoch, opt.decay_epoch).step
 )
-lr_shedular_D_B = torch.optim.lr_scheduler.LambdaLR(
+lr_schedular_D_B = torch.optim.lr_scheduler.LambdaLR(
     optimizer_D_B, lr_lambda=LambdaLR(opt.n_epochs, opt.epoch, opt.decay_epoch).step
 )
 
